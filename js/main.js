@@ -89,7 +89,7 @@ while(c<=autos)
                 console.log("El porcenta 1 es:" + porce3(fiat));
                 cuotas=Number(prompt("Ingrese la cantidad de cuotas que desea pagar"));
                 console.log("La cantidad de cuotas a pagar es de:" + cuotas);
-                total=Peugeot/cuotas;
+                total=fiat/cuotas;
                 alert("Por cada cuota debera de pagar un total de:" + total);
                 console.log("Por cada cuota debera de pagar un total de:" + total);
                 if(cuotas>24)
