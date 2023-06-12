@@ -41,7 +41,7 @@ while(c<=autos)
                 console.log("Por cada cuota debera de pagar un total de:" + total);
                 if(cuotas>24)
                 {
-                    alert("Porcer mas de 24 cuotas, a las siguientes se les suma un 10% del valor de cada cuota");
+                    alert("Por ser mas de 24 cuotas, a las siguientes se les suma un 10% del valor de cada cuota");
                     cuotasmas=cuotas-24;
                     cuotas=cuotas-cuotasmas;
                     console.log("El porcenta que se le agrega a la cuota es:" + porce1(Peugeot));
@@ -50,7 +50,8 @@ while(c<=autos)
                     totalmas=cuotasmas*porce1(Peugeot);
                     totalmas=cuotas+totalmas
                     //fijarme arriba
-                    alert("Por las siguientes cuotas a la 24 debera de pagar por cuota:" + totalmas)
+                    alert("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas)
+                    console.log(console.log("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas))
                     
                 }
             break
@@ -68,7 +69,7 @@ while(c<=autos)
                 console.log("Por cada cuota debera de pagar un total de:" + total);
                 if(cuotas>24)
                 {
-                    alert("Porcer mas de 24 cuotas, a las siguientes se les suma un 15% del valor de cada cuota");
+                    alert("Por ser mas de 24 cuotas, a las siguientes se les suma un 15% del valor de cada cuota");
                     cuotasmas=cuotas-24;
                     cuotas=cuotas-cuotasmas;
                     console.log("El porcenta que se le agrega a la cuota es:" + porce2(Mercedez));
@@ -77,8 +78,8 @@ while(c<=autos)
                     totalmas=cuotasmas*porce2(Mercedez);
                     totalmas=cuotas+totalmas
                     //fijarme arriba
-                    alert("Por las siguientes cuotas a la 24 debera de pagar por cuota:" + totalmas)
-                    
+                    alert("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas)
+                    console.log(console.log("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas))
                 }
                 break
             ;
@@ -94,7 +95,7 @@ while(c<=autos)
                 console.log("Por cada cuota debera de pagar un total de:" + total);
                 if(cuotas>24)
                 {
-                    alert("Porcer mas de 24 cuotas, a las siguientes se les suma un 10% del valor de cada cuota");
+                    alert("Por ser mas de 24 cuotas, a las siguientes se les suma un 10% del valor de cada cuota");
                     cuotasmas=cuotas-24;
                     cuotas=cuotas-cuotasmas;
                     console.log("El porcenta que se le agrega a la cuota es:" + porce3(fiat));
@@ -103,14 +104,15 @@ while(c<=autos)
                     totalmas=cuotasmas*porce3(fiat);
                     totalmas=cuotas+totalmas
                     //fijarme arriba
-                    alert("Por las siguientes cuotas a la 24 debera de pagar por cuota:" + totalmas)
-                    
+                    alert("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas)
+                    console.log(console.log("Por las siguientes cuotas superiores a las 24, debera de pagar por cuota:" + totalmas))
                 }
                 break
             ;
             default:
                 elegido=Number(prompt("Debe de elegir uno de los 3 autos propuestos"));
-                c--;
+                c=c-1;
+                alert("lo siguiente ingresado no se tendra en cuenta")
                 break
             ;
     }
