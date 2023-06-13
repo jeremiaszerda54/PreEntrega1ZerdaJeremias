@@ -113,7 +113,7 @@ while(c<=autos)
                 elegido=Number(prompt("Debe de elegir uno de los 3 autos propuestos"));
                 c=c-1;
                 alert("lo siguiente ingresado no se tendra en cuenta")
-                break
+                continue
             ;
     }
 
