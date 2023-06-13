@@ -110,9 +110,8 @@ while(c<=autos)
                 break
             ;
             default:
-                elegido=Number(prompt("Debe de elegir uno de los 3 autos propuestos"));
+                alert("Debe de elegir uno de los 3 autos propuestos");
                 c=c-1;
-                alert("lo siguiente ingresado no se tendra en cuenta")
                 continue
             ;
     }
@@ -137,6 +136,11 @@ while(c<=autos)
             color3=color3+1;
             console.log("El color elegido es rojo")
             break
+        ;
+        default:
+            alert("Debe de elegir uno de los 3 colores propuestos propuestos, se reiniciara el ciclo");
+            c=c-1;
+            continue
         ;
     }
 
